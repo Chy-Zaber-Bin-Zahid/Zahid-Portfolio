@@ -1,0 +1,48 @@
+$color-white: white;
+$color-black: black;
+$color-lime: rgb(49, 240, 49);
+// intro part
+.intro {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-image: linear-gradient(105deg, $color-white 50%, $color-lime 50%);
+
+
+  &__img-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .intro-img{
+      width: 60%;
+    }
+
+    .formLeft{
+      animation-name: fromLeft;
+      animation-duration: 1s;
+      animation-timing-function: ease-out;
+    }
+  }
+
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: $color-white;
+
+
+    .intro-h1 {
+      color: $color-black;
+    }
+
+    .formRight{
+      animation-name: fromRight;
+      animation-duration: 1s;
+      animation-timing-function: ease-out;
+    }
+  }
+}

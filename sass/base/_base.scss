@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: serif;
+}
+
+/* Header part */
+.header {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
