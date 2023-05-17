@@ -1,0 +1,55 @@
+$color-dark: black;
+$color-dark-green: rgb(12, 184, 12);
+$color-dark-lime: rgb(47, 236, 47);
+// about part
+.about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.about-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__working {
+    width: 100%;
+    display: block;
+  }
+}
+
+.about-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  &__h1 {
+    font-size: 3rem;
+    text-align: center;
+    background-image: linear-gradient(
+      to right,
+      $color-dark-green,
+      $color-dark-lime
+    );
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: all 0.3s;
+
+    &:hover {
+      transform: skewY(2deg) skewX(10deg) scale(1.1);
+      text-shadow: 0.5rem 1rem 2rem rgba($color-dark, 0.2);
+    }
+  }
+
+  &__p {
+    font-size: 1.6rem;
+  }
+
+  .fromUp{
+    animation-name: fromUp;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+  }
+}
+
