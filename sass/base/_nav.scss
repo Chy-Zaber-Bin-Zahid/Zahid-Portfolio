@@ -16,7 +16,7 @@ $color-blue: rgb(0, 108, 250);
   background-color: rgba($color-white, 0);
   transition: all 0.3s;
 
-  &__logo{
+  &__logo {
     width: 10rem;
   }
 
@@ -34,8 +34,7 @@ $color-blue: rgb(0, 108, 250);
     color: $color-dark;
   }
 
-  &__a:hover,
-  :active {
+  &__a:hover {
     color: $color-blue;
     cursor: pointer;
     text-decoration: underline;

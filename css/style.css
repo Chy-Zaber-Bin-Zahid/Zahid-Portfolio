@@ -37,8 +37,7 @@ html {
     text-decoration: none;
     transition: all 0.3s;
     color: black; }
-  .nav__a:hover,
-  .nav :active {
+  .nav__a:hover {
     color: #006cfa;
     cursor: pointer;
     text-decoration: underline; }
@@ -113,7 +112,7 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
   padding: 1rem 2rem; }
   .about-main__h1 {
     font-size: 3rem;
@@ -126,8 +125,61 @@ html {
       transform: skewY(2deg) skewX(10deg) scale(1.1);
       text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
   .about-main__p {
-    font-size: 1.6rem; }
+    font-size: 1.8rem; }
+  .about-main__p::first-letter {
+    font-size: 1.9rem; }
   .about-main .fromUp {
     animation-name: fromUp;
     animation-duration: 1s;
     animation-timing-function: ease-out; }
+  .about-main__experience {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%; }
+    .about-main__experience .expSub {
+      font-size: 2rem;
+      text-align: center;
+      font-weight: bold; }
+      .about-main__experience .expSub p {
+        font-size: 1.6rem;
+        color: #8a8a8a; }
+
+.section-skill {
+  padding: 2rem 2rem 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem; }
+  .section-skill h1 {
+    width: fit-content;
+    font-size: 3rem;
+    background-image: linear-gradient(to right, #0cb80c, #2fec2f);
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: all 0.3s; }
+    .section-skill h1:hover {
+      transform: skewY(2deg) skewX(10deg) scale(1.1);
+      text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
+
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem; }
+  .skill-grid__card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 5px;
+    padding: 2rem;
+    box-shadow: 0px 8px 15px -6px #747474;
+    transition: all .3s;
+    background-color: #00ff37; }
+    .skill-grid__card:hover {
+      transform: scale(1.05); }
+    .skill-grid__card h1 {
+      color: black;
+      font-size: 2rem; }
+    .skill-grid__card p {
+      font-size: 1.6rem;
+      color: #747474; }

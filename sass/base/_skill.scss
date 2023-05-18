@@ -1,0 +1,61 @@
+$color-dark-green: rgb(12, 184, 12);
+$color-dark-lime: rgb(47, 236, 47);
+$color-black: black;
+$color-gray: rgb(116, 116, 116);
+// skill part
+.section-skill {
+  padding: 2rem 2rem 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+
+  & h1 {
+    width: fit-content;
+    font-size: 3rem;
+    background-image: linear-gradient(
+      to right,
+      $color-dark-green,
+      $color-dark-lime
+    );
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: all 0.3s;
+
+    &:hover {
+      transform: skewY(2deg) skewX(10deg) scale(1.1);
+      text-shadow: 0.5rem 1rem 2rem rgba($color-dark, 0.2);
+    }
+  }
+}
+
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 5px;
+    padding: 2rem;
+    box-shadow: 0px 8px 15px -6px $color-gray;
+    transition: all .3s;
+    background-color: rgb(0, 255, 55);
+
+    &:hover{
+      transform: scale(1.05);
+    }
+
+    & h1 {
+      color: $color-black;
+      font-size: 2rem;
+    }
+
+    & p {
+      font-size: 1.6rem;
+      color: $color-gray;
+    }
+  }
+}
