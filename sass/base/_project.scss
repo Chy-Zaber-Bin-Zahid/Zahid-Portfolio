@@ -1,0 +1,88 @@
+
+$color-lime: rgba(0, 255, 34, 0.6);
+$color-dark-green: rgb(12, 184, 12);
+$color-dark-lime: rgb(47, 236, 47);
+$color-dark: black;
+$color-white: white;
+$color-gray: rgb(66, 66, 66);
+// project part
+.project {
+  padding: 2rem 4rem 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__h1 {
+    width: fit-content;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    background-image: linear-gradient(
+      to right,
+      $color-dark-green,
+      $color-dark-lime
+    );
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: all 0.3s;
+
+    &:hover {
+      transform: skewY(2deg) skewX(10deg) scale(1.1);
+      text-shadow: 0.5rem 1rem 2rem rgba($color-dark, 0.2);
+    }
+  }
+
+  &__main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  &__img-text {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__text-hover {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-lime;
+    opacity: 0;
+    transition: all 0.3s;
+    width: 100%;
+    height: 100%;
+
+    &:hover{
+      opacity: 1;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 35rem;
+    display: block;
+    transition: all 0.3s;
+  }
+
+  &__inside-h1 {
+    font-size: 2rem;
+    color: $color-white;
+  }
+
+  &__inside-p {
+    font-size: 1.8rem;
+    color: $color-dark;
+  }
+
+  &__des{
+    font-size: 1.6rem;
+    width: 70%;
+    text-align: center;
+    color: $color-gray;
+  }
+}

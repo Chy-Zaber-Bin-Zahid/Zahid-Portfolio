@@ -8,6 +8,7 @@ html {
   font-size: 62.5%;
   font-family: serif;
   scroll-behavior: smooth;
+  scroll-padding-top: var(--scroll-padding, 87.65px);
 }
 
 /* Header part */
