@@ -1,4 +1,3 @@
-
 $color-lime: rgba(0, 255, 34, 0.6);
 $color-dark-green: rgb(12, 184, 12);
 $color-dark-lime: rgb(47, 236, 47);
@@ -57,7 +56,7 @@ $color-gray: rgb(66, 66, 66);
     width: 100%;
     height: 100%;
 
-    &:hover{
+    &:hover {
       opacity: 1;
     }
   }
@@ -79,7 +78,7 @@ $color-gray: rgb(66, 66, 66);
     color: $color-dark;
   }
 
-  &__des{
+  &__des {
     font-size: 1.6rem;
     width: 70%;
     text-align: center;

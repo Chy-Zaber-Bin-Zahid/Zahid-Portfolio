@@ -1,0 +1,99 @@
+$color-dark-green: rgba(12, 184, 12, 0.5);
+$color-dark-lime: rgba(47, 236, 47, 0.5);
+$color-green: rgb(12, 184, 12);
+$color-lime: rgb(47, 236, 47);
+// contact part
+.contact {
+  padding: 2rem 0;
+
+  &__main {
+    margin: 0 auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  &__title {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    width: fit-content;
+    background-image: linear-gradient(
+      to right,
+      $color-green,
+      $color-lime
+    );
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: all 0.3s;
+
+    &:hover {
+      transform: skewY(2deg) skewX(10deg) scale(1.1);
+      text-shadow: 0.5rem 1rem 2rem rgba($color-dark, 0.2);
+    }
+  }
+
+  &__location {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+  }
+
+  &__num-mail {
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    align-items: center;
+    font-size: 1.8rem;
+  }
+
+  &__icon-text {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 0.5rem;
+    color: black;
+    margin-bottom: 0.3rem;
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__message {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  &__input-length {
+    grid-column-end: span 2;
+  }
+
+  &__same {
+    padding: 1rem;
+    font-family: serif;
+    font-size: 2rem;
+    border: none;
+    transition: all .3s;
+    background-image: linear-gradient(
+      to right,
+      $color-dark-green,
+      $color-dark-lime
+    );
+    border-radius: 5px;
+    resize: none;
+
+    &:focus {
+      outline: 2px solid $color-dark-green;
+    }
+  }
+
+  &__btn:hover{
+    background-image: linear-gradient(
+      to right,
+      rgb(206, 206, 206),
+      rgb(185, 185, 185)
+    );
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,51 @@
+@media (max-width: 1220px) {
+  html{
+    font-size: 55%;
+  }
+
+  .intro {
+    background-image: linear-gradient(105deg, white 50%, #3df83d 50%);
+  }
+
+  .intro__text {
+    font-size: 1.6rem;
+  }
+
+  .nav__logo {
+    width: 8rem;
+  }
+
+  .project__img {
+    height: 30rem;
+  }
+
+  .contact__same {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 905px) {
+  html{
+    font-size: 50%;
+  }
+
+  .intro {
+    background-image: linear-gradient(105deg, white 50%, #3df83d 50%);
+  }
+
+  .intro__text {
+    font-size: 1.4rem;
+  }
+
+  .nav__logo {
+    width: 7rem;
+  }
+
+  .project__img {
+    height: 25rem;
+  }
+
+  .contact__same {
+    font-size: 1.6rem;
+  }
+}

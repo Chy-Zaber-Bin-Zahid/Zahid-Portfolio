@@ -8,7 +8,7 @@ $color-blue: rgb(0, 108, 250);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 3rem;
+  padding: 0.5rem 3rem;
   position: fixed;
   width: 100%;
   top: 0;
@@ -18,7 +18,7 @@ $color-blue: rgb(0, 108, 250);
   z-index: 1000;
 
   &__logo {
-    width: 10rem;
+    width: 9rem;
   }
 
   &__ul {
@@ -44,7 +44,7 @@ $color-blue: rgb(0, 108, 250);
 
 .sticky {
   background-color: rgba($color-white, 0.7);
-  padding: 1.4rem 3rem;
+  padding: 1rem 3rem;
   transition: all 0.3s;
   box-shadow: 0px 8px 15px -6px $color-gray;
 }
