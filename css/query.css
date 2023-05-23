@@ -1,6 +1,7 @@
 @media (max-width: 1220px) {
   html {
     font-size: 55%;
+    scroll-padding-top: var(--scroll-padding, 70.1px);
   }
 
   .intro {
@@ -27,10 +28,7 @@
 @media (max-width: 905px) {
   html {
     font-size: 53%;
-  }
-
-  .header {
-    height: 50vh;
+    scroll-padding-top: var(--scroll-padding, 61.6px);
   }
 
   .intro {
@@ -38,7 +36,7 @@
   }
 
   .intro__text {
-    font-size: 1.45rem;
+    font-size: 1.3rem;
   }
 
   .nav__logo {
@@ -62,13 +60,30 @@
   }
 }
 
+@media (max-width: 780px) {
+  .project__inside-h1{
+    font-size: 1.8rem;
+  }
+
+  .contact__main {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .contact__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 @media (max-width: 740px) {
   html {
     font-size: 53%;
+    scroll-padding-top: var(--scroll-padding, 61.6px);
   }
 
   .intro__text {
-    font-size: 1.1rem;
+    font-size: 1.25rem;
   }
 
   .about {
@@ -88,31 +103,6 @@
     height: 35rem;
   }
 
-  .contact__main {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .contact__info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .contact__same {
-    font-size: 1.8rem;
-  }
-}
-
-@media (max-width: 740px) {
-  .intro__text {
-    font-size: 1.1rem;
-  }
-
-  .project__img {
-    height: 30rem;
-  }
-
   .contact__same {
     font-size: 1.8rem;
   }
@@ -123,30 +113,33 @@
     height: 30rem;
   }
 
+  .intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .intro__img-main .intro-img {
+    width: 40%;
+  }
+
   .intro__text {
-    font-size: 1rem;
+    font-size: 1.4rem;
+    color: #147aff;
   }
 }
 
-
 @media (max-width: 530px) {
-  html{
+  html {
     font-size: 50%;
-  }
-
-  .header {
-    height: 30vh;
-  }
-
-  .intro{
-    grid-template-columns: .7fr 1.3fr;
+    scroll-padding-top: var(--scroll-padding, 58.25px);
   }
 
   .intro__text {
-    font-size: .84rem;
-    color: rgb(255, 217, 0);
+    font-size: 1.4rem;
   }
-
 
   .project__img {
     height: 37rem;
@@ -158,7 +151,7 @@
 
   .project__main {
     grid-template-columns: repeat(1, 1fr);
-  } 
+  }
 
   .contact__main {
     width: 95%;
@@ -168,13 +161,58 @@
   }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 440px) {
+  html {
+    font-size: 50%;
+    scroll-padding-top: var(--scroll-padding, 79.25px);
+  }
 
+  .nav {
+    flex-direction: column;
+  }
+  .intro__img-main .intro-img {
+    width: 55%;
+  }
+
+  .intro__text {
+    font-size: 1.3rem;
+  }
+
+  .contact__card-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact__img {
+    width: 100%;
+  }
+
+  .contact__message{
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+
+@media (max-width: 350px) {
   .project__img {
     height: 30rem;
   }
 
+  .contact__main {
+    width: 95%;
+  }
+
   .contact__same {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+  }
+
+  .intro__img-main .intro-img {
+    width: 55%;
+  }
+
+  .intro__text {
+    font-size: 1.1rem;
   }
 }

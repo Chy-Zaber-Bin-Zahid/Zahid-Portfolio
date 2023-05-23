@@ -18,11 +18,7 @@ $color-lime: rgb(47, 236, 47);
     margin-bottom: 1rem;
     font-size: 3rem;
     width: fit-content;
-    background-image: linear-gradient(
-      to right,
-      $color-green,
-      $color-lime
-    );
+    background-image: linear-gradient(to right, $color-green, $color-lime);
     -webkit-background-clip: text;
     color: transparent;
     transition: all 0.3s;
@@ -36,15 +32,21 @@ $color-lime: rgb(47, 236, 47);
   &__location {
     font-size: 2rem;
     font-weight: bold;
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.5rem;
   }
 
   &__num-mail {
+    width: fit-content;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+
+  &__a {
     display: flex;
     justify-content: center;
-    width: fit-content;
     align-items: center;
-    font-size: 1.8rem;
+    text-decoration: none;
+    color: black;
   }
 
   &__icon-text {
@@ -52,7 +54,6 @@ $color-lime: rgb(47, 236, 47);
     height: 2rem;
     margin-right: 0.5rem;
     color: black;
-    margin-bottom: 0.3rem;
   }
 
   &__img {
@@ -74,7 +75,7 @@ $color-lime: rgb(47, 236, 47);
     font-family: serif;
     font-size: 2rem;
     border: none;
-    transition: all .3s;
+    transition: all 0.3s;
     background-image: linear-gradient(
       to right,
       $color-dark-green,
@@ -88,7 +89,7 @@ $color-lime: rgb(47, 236, 47);
     }
   }
 
-  &__btn:hover{
+  &__btn:hover {
     background-image: linear-gradient(
       to right,
       rgb(206, 206, 206),
@@ -98,11 +99,11 @@ $color-lime: rgb(47, 236, 47);
   }
 }
 
-.icon-bot{
+.icon-bot {
   width: 3rem;
   height: 3rem;
 }
 
-.two-icon{
-  margin-top: .3rem
+.two-icon {
+  margin-top: 0.3rem;
 }
