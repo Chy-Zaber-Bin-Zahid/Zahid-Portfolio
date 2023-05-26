@@ -52,7 +52,7 @@ html {
 
 @keyframes fromLeft {
   0% {
-    transform: translateX(-150px); }
+    transform: translateX(-100px); }
   100% {
     transform: translateX(0); } }
 
@@ -70,30 +70,32 @@ html {
 
 .intro {
   height: 100%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  background-image: linear-gradient(105deg, white 50%, #3df83d 50%); }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(105deg, white 50%, #34db34 50%); }
   .intro__img-main {
     display: flex;
     justify-content: center;
     align-items: center; }
     .intro__img-main .intro-img {
       width: 60%; }
-    .intro__img-main .formLeft {
-      animation-name: fromLeft;
-      animation-duration: 1s;
-      animation-timing-function: ease-out; }
   .intro__text {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 2rem;
-    color: white; }
+    color: #0051ff; }
     .intro__text .intro-h1 {
       color: black; }
     .intro__text .formRight {
       animation-name: fromRight;
+      animation-duration: 1s;
+      animation-timing-function: ease-out; }
+    .intro__text .formLeft {
+      animation-name: fromLeft;
       animation-duration: 1s;
       animation-timing-function: ease-out; }
 
@@ -156,7 +158,7 @@ html {
   .section-skill__title {
     width: fit-content;
     font-size: 3rem;
-    background-image: linear-gradient(to right, #0cb80c, #2fec2f);
+    background-image: linear-gradient(to right, #0cb80c, #34db34);
     -webkit-background-clip: text;
     color: transparent;
     transition: all 0.3s; }
@@ -182,7 +184,7 @@ html {
       color: black;
       font-size: 2rem;
       padding: 1rem 2rem;
-      background-color: lime; }
+      background-color: #34db34; }
     .skill-grid__card p {
       font-size: 1.6rem;
       color: #747474;
@@ -245,15 +247,19 @@ html {
     color: #424242; }
 
 .contact {
-  padding: 2rem 0; }
+  padding: 2rem 0rem 4rem 0rem; }
   .contact__main {
     margin: 0 auto;
-    width: 80%;
+    width: 95%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem; }
+  .contact__main-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
   .contact__title {
-    margin-bottom: 1rem;
+    margin-bottom: .5rem;
     font-size: 3rem;
     width: fit-content;
     background-image: linear-gradient(to right, #0cb80c, #2fec2f);
@@ -264,12 +270,12 @@ html {
       transform: skewY(2deg) skewX(10deg) scale(1.1);
       text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
   .contact__location {
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-weight: bold;
     margin-bottom: 0.5rem; }
   .contact__num-mail {
     width: fit-content;
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin-bottom: 0.5rem; }
   .contact__a {
     display: flex;
@@ -284,26 +290,6 @@ html {
     color: black; }
   .contact__img {
     width: 100%; }
-  .contact__message {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem; }
-  .contact__input-length {
-    grid-column-end: span 2; }
-  .contact__same {
-    padding: 1rem;
-    font-family: serif;
-    font-size: 2rem;
-    border: none;
-    transition: all 0.3s;
-    background-image: linear-gradient(to right, rgba(12, 184, 12, 0.5), rgba(47, 236, 47, 0.5));
-    border-radius: 5px;
-    resize: none; }
-    .contact__same:focus {
-      outline: 2px solid rgba(12, 184, 12, 0.5); }
-  .contact__btn:hover {
-    background-image: linear-gradient(to right, #cecece, #b9b9b9);
-    cursor: pointer; }
 
 .icon-bot {
   width: 3rem;
@@ -315,7 +301,7 @@ html {
 .footer {
   text-align: center;
   padding: 1rem;
-  background-color: lime;
+  background-color: #34db34;
   font-size: 2rem;
   color: white;
   font-weight: bold; }

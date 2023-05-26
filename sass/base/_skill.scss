@@ -1,5 +1,4 @@
-$color-dark-green: rgb(12, 184, 12);
-$color-dark-lime: rgb(47, 236, 47);
+$color-dark-lime: rgb(52, 219, 52);
 $color-black: black;
 $color-gray: rgb(116, 116, 116);
 // skill part
@@ -56,7 +55,7 @@ $color-gray: rgb(116, 116, 116);
       color: $color-black;
       font-size: 2rem;
       padding: 1rem 2rem;
-      background-color: lime;
+      background-color: $color-dark-lime;
     }
 
     & p {

@@ -8,9 +8,9 @@
     background-image: linear-gradient(105deg, white 50%, #3df83d 50%);
   }
 
-  .intro__text {
+  /* .intro__text {
     font-size: 1.6rem;
-  }
+  } */
 
   .nav__logo {
     width: 8rem;
@@ -35,9 +35,9 @@
     background-image: linear-gradient(105deg, white 50%, #3df83d 50%);
   }
 
-  .intro__text {
+  /* .intro__text {
     font-size: 1.3rem;
-  }
+  } */
 
   .nav__logo {
     width: 7rem;
@@ -61,7 +61,7 @@
 }
 
 @media (max-width: 780px) {
-  .project__inside-h1{
+  .project__inside-h1 {
     font-size: 1.8rem;
   }
 
@@ -82,9 +82,9 @@
     scroll-padding-top: var(--scroll-padding, 61.6px);
   }
 
-  .intro__text {
+  /* .intro__text {
     font-size: 1.25rem;
-  }
+  } */
 
   .about {
     display: grid;
@@ -126,8 +126,8 @@
   }
 
   .intro__text {
-    font-size: 1.4rem;
-    color: #147aff;
+    font-size: 1.6rem;
+    color: rgb(0, 81, 255);
   }
 }
 
@@ -137,9 +137,9 @@
     scroll-padding-top: var(--scroll-padding, 58.25px);
   }
 
-  .intro__text {
-    font-size: 1.4rem;
-  }
+  /* .intro__text {
+    font-size: 1.rem;
+  } */
 
   .project__img {
     height: 37rem;
@@ -164,11 +164,19 @@
 @media (max-width: 440px) {
   html {
     font-size: 50%;
-    scroll-padding-top: var(--scroll-padding, 79.25px);
+    scroll-padding-top: var(--scroll-padding, 70.57px);
   }
 
   .nav {
     flex-direction: column;
+  }
+
+  .nav__logo {
+    width: 6rem;
+  }
+  .nav__ul {
+    gap: 2rem;
+    font-size: 2rem;
   }
   .intro__img-main .intro-img {
     width: 55%;
@@ -188,14 +196,15 @@
     width: 100%;
   }
 
-  .contact__message{
+  .contact__message {
     display: flex;
     flex-direction: column;
   }
-
 }
 
 @media (max-width: 350px) {
+
+
   .project__img {
     height: 30rem;
   }

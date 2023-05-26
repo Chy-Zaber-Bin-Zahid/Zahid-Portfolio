@@ -1,21 +1,27 @@
-$color-dark-green: rgba(12, 184, 12, 0.5);
-$color-dark-lime: rgba(47, 236, 47, 0.5);
+$color-dark-green: rgb(155, 214, 19);
+$color-dark-lime: rgb(144, 209, 39);
 $color-green: rgb(12, 184, 12);
 $color-lime: rgb(47, 236, 47);
 // contact part
 .contact {
-  padding: 2rem 0;
+  padding: 2rem 0rem 4rem 0rem;
 
   &__main {
     margin: 0 auto;
-    width: 80%;
+    width: 95%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
   }
 
+  &__main-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   &__title {
-    margin-bottom: 1rem;
+    margin-bottom: .5rem;
     font-size: 3rem;
     width: fit-content;
     background-image: linear-gradient(to right, $color-green, $color-lime);
@@ -30,14 +36,14 @@ $color-lime: rgb(47, 236, 47);
   }
 
   &__location {
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
   }
 
   &__num-mail {
     width: fit-content;
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin-bottom: 0.5rem;
   }
 
@@ -55,48 +61,54 @@ $color-lime: rgb(47, 236, 47);
     margin-right: 0.5rem;
     color: black;
   }
+  
 
   &__img {
     width: 100%;
   }
 
-  &__message {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-  }
+  // &__message {
+  //   display: grid;
+  //   grid-template-columns: repeat(2, 1fr);
+  //   gap: 1rem;
+  // }
 
-  &__input-length {
-    grid-column-end: span 2;
-  }
+  // &__input-length {
+  //   grid-column-end: span 2;
+  // }
 
-  &__same {
-    padding: 1rem;
-    font-family: serif;
-    font-size: 2rem;
-    border: none;
-    transition: all 0.3s;
-    background-image: linear-gradient(
-      to right,
-      $color-dark-green,
-      $color-dark-lime
-    );
-    border-radius: 5px;
-    resize: none;
+  // &__same {
+  //   padding: 1rem;
+  //   font-family: serif;
+  //   font-size: 2rem;
+  //   border: none;
+  //   transition: all 0.3s;
+  //   background-image: linear-gradient(
+  //     to right,
+  //     $color-dark-green,
+  //     $color-dark-lime
+  //   );
+  //   border-radius: 5px;
+  //   resize: none;
 
-    &:focus {
-      outline: 2px solid $color-dark-green;
-    }
-  }
+  //   &:focus {
+  //     outline: 2px solid $color-dark-green;
+  //   }
+  // }
 
-  &__btn:hover {
-    background-image: linear-gradient(
-      to right,
-      rgb(206, 206, 206),
-      rgb(185, 185, 185)
-    );
-    cursor: pointer;
-  }
+  // &__btn:hover {
+  //   background-image: linear-gradient(
+  //     to right bottom,
+  //     rgb(206, 206, 206),
+  //     rgb(185, 185, 185)
+  //   );
+  //   cursor: pointer;
+  //   transform: translateY(-3px);
+  // }
+
+  // &__btn:active{
+  //   transform: translateY(0px);
+  // }
 }
 
 .icon-bot {
