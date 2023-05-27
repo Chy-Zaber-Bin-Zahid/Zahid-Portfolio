@@ -1,6 +1,7 @@
 $color-dark-lime: rgb(52, 219, 52);
 $color-black: black;
 $color-gray: rgb(116, 116, 116);
+$color-white: white;
 // skill part
 .section-skill {
   padding: 2rem 2rem 3rem 2rem;
@@ -8,6 +9,16 @@ $color-gray: rgb(116, 116, 116);
   flex-direction: column;
   align-items: center;
   gap: 2rem;
+
+  // background-image: linear-gradient(
+  //     rgba(56, 70, 77, 0.75),
+  //     rgba(56, 70, 77, 0.75)
+  //   ),
+  //   url(/civil.jpg);
+
+  // background-size: cover;
+  // background-position: center center;
+  // background-attachment: fixed;
 
   &__title {
     width: fit-content;
@@ -34,6 +45,7 @@ $color-gray: rgb(116, 116, 116);
   gap: 2rem;
 
   &__card {
+    background-color: $color-white;
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -61,7 +73,7 @@ $color-gray: rgb(116, 116, 116);
     & p {
       font-size: 1.6rem;
       color: $color-gray;
-      padding: 0rem 2rem 2rem 2rem; 
+      padding: 0rem 2rem 2rem 2rem;
     }
   }
 }

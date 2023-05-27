@@ -16,4 +16,16 @@ html {
   display: flex;
   flex-direction: column;
   height: 100vh;
+
+}
+
+.reveal {
+  transform: translateY(10rem);
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.reveal.active {
+  transform: translateY(0rem);
+  opacity: 1;
 }

@@ -1,7 +1,7 @@
 $color-white: white;
-$color-black: black;
+$color-black: #1be71b;
 $color-lime: rgb(52, 219, 52);
-$color-blue: rgb(0, 81, 255);
+$color-blue: rgb(255, 255, 255);
 // intro part
 .intro {
   height: 100%;
@@ -11,7 +11,17 @@ $color-blue: rgb(0, 81, 255);
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(105deg, $color-white 50%, $color-lime 50%);
+  // background-image: linear-gradient(105deg, $color-white 50%, $color-lime 50%);
+
+  background-image: linear-gradient(
+      rgba(56, 70, 77, 0.75),
+      rgba(56, 70, 77, 0.75)
+    ),
+    url(/civil.jpg);
+
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
 
   &__img-main {
     display: flex;
@@ -21,8 +31,6 @@ $color-blue: rgb(0, 81, 255);
     .intro-img {
       width: 60%;
     }
-
-    
   }
 
   &__text {

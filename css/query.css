@@ -1,12 +1,37 @@
-@media (max-width: 1220px) {
+@media (max-width: 1900px) {
+
   html {
-    font-size: 55%;
-    scroll-padding-top: var(--scroll-padding, 70.1px);
+    font-size: 70%;
+    scroll-padding-top: var(--scroll-padding, 95.5px);
   }
 
-  .intro {
-    background-image: linear-gradient(105deg, white 50%, #3df83d 50%);
+  .project__img {
+    height: 50rem;
   }
+}
+
+@media (max-width: 1600px) {
+
+  html {
+    font-size: 65%;
+    scroll-padding-top: var(--scroll-padding, 90px);
+  }
+
+  .project__img {
+    height: 40rem;
+
+  }
+}
+
+@media (max-width: 1320px) {
+  html {
+    font-size: 55%;
+    scroll-padding-top: var(--scroll-padding, 69.5px);
+  }
+
+  /* .intro {
+    background-image: linear-gradient(105deg, white 50%, #3df83d 50%);
+  } */
 
   /* .intro__text {
     font-size: 1.6rem;
@@ -17,7 +42,7 @@
   }
 
   .project__img {
-    height: 30rem;
+    height: 35rem;
   }
 
   .contact__same {
@@ -28,12 +53,12 @@
 @media (max-width: 905px) {
   html {
     font-size: 53%;
-    scroll-padding-top: var(--scroll-padding, 61.6px);
+    scroll-padding-top: var(--scroll-padding, 62px);
   }
 
-  .intro {
+  /* .intro {
     background-image: linear-gradient(105deg, white 50%, #3df83d 50%);
-  }
+  } */
 
   /* .intro__text {
     font-size: 1.3rem;
@@ -47,9 +72,9 @@
     gap: 1rem;
   }
 
-  .about-img__working {
+  /* .about-img__working {
     width: 95%;
-  }
+  } */
 
   .project__img {
     height: 25rem;
@@ -60,7 +85,38 @@
   }
 }
 
+@media (max-width: 790px) {
+
+  /* .about-main{
+    width: 100%;
+    border: 1px solid red;
+    margin: 0 auto;
+    padding: 0rem 1rem;
+  } */
+
+  .about-main__p{
+    font-size: 1.6rem;
+  }
+}
+
 @media (max-width: 780px) {
+  html {
+    font-size: 53%;
+    scroll-padding-top: var(--scroll-padding, 61.5px);
+  }
+
+  .about-main{
+    padding: 5rem .5rem 3rem .5rem;
+  }
+
+  .about-main__experience .expSub{
+    font-size: 1.8rem;
+  }
+
+  .about-main__experience .expSub p{
+    font-size: .8em;
+  }
+
   .project__inside-h1 {
     font-size: 1.8rem;
   }
@@ -89,6 +145,10 @@
   .about {
     display: grid;
     grid-template-columns: 1fr;
+  }
+
+  .about-main__p{
+    margin-bottom: 1rem;
   }
 
   .skill-grid {
@@ -127,7 +187,7 @@
 
   .intro__text {
     font-size: 1.6rem;
-    color: rgb(0, 81, 255);
+    color: white;
   }
 }
 
@@ -175,7 +235,7 @@
     width: 6rem;
   }
   .nav__ul {
-    gap: 2rem;
+    gap: 2.4rem;
     font-size: 2rem;
   }
   .intro__img-main .intro-img {

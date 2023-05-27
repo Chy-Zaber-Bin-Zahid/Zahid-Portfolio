@@ -50,7 +50,8 @@ $color-gray: rgb(66, 66, 66);
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: $color-lime;
+    // background-color: $color-lime;
+    background-image: linear-gradient( rgba(38, 202, 20, 0.75), rgba(255, 255, 255, 0.75) );
     opacity: 0;
     transition: all 0.3s;
     width: 100%;
@@ -71,15 +72,18 @@ $color-gray: rgb(66, 66, 66);
   &__inside-h1 {
     font-size: 2rem;
     color: $color-white;
+    font-weight: bold;
   }
 
   &__inside-p {
     font-size: 1.8rem;
     color: $color-dark;
+    font-weight: bold;
   }
 
   &__des {
     font-size: 1.6rem;
+    font-weight: bold;
     width: 70%;
     text-align: center;
     color: $color-gray;

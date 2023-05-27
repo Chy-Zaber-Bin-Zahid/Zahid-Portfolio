@@ -1,5 +1,5 @@
 // variables nav
-$color-dark: black;
+$color-dark: rgb(0, 0, 0);
 $color-white: white;
 $color-gray: gray;
 $color-blue: rgb(0, 108, 250);
@@ -13,7 +13,8 @@ $color-blue: rgb(0, 108, 250);
   width: 100%;
   top: 0;
   left: 0;
-  background-color: rgba($color-white, 0);
+  // background-color: rgba($color-white, 0);
+  background-color: rgba($color-white, 0.7);
   transition: all 0.3s;
   z-index: 1000;
 
