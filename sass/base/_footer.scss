@@ -1,10 +1,9 @@
-$color-lime: rgb(52, 219, 52);
+$color-lime: #343a40;
 
 .footer{
   text-align: center;
-  padding: 1rem;
+  padding: 2rem 1rem;
   background-color: $color-lime;
   font-size: 2rem;
-  color: rgb(0, 0, 0);
-  font-weight: bold;
+  color: white;
 }

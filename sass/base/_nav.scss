@@ -30,13 +30,14 @@ $color-blue: rgb(0, 108, 250);
   }
 
   &__a:link,
-  :visited {
+  &__a:visited {
     text-decoration: none;
     transition: all 0.3s;
     color: $color-dark;
   }
 
-  &__a:hover {
+  &__a:hover,
+  &__a:active {
     color: $color-blue;
     cursor: pointer;
     text-decoration: underline;
